@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requerimentos - InfoAlunos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo-area"><div class="logo-icon">UMa</div><span>InfoAlunos</span></div>
+        <nav class="top-nav"><a href="index.html" style="color:white; text-decoration:none;">Voltar</a></nav>
+    </header>
+
+    <div class="layout-grid">
+        <aside class="sidebar">
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">Início</a></li>
+                    <li class="nav-group-title">Geral</li>
+                    <li><a href="perfil.html">Dados Pessoais</a></li>
+                    <li class="nav-group-title">Serviços</li>
+                    <li><a href="pagamentos.html">Pagamentos</a></li>
+                    <li><a href="inscricoes.html">Inscrições</a></li>
+                    <li><a href="requerimentos.html" class="active">Requerimentos</a></li>
+                    <li class="nav-group-title">Avaliação</li>
+                    <li><a href="pautas.html">Pautas e Notas</a></li>
+                    <li class="nav-group-title">Aulas</li>
+                    <li><a href="horario.html">Horário</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
+                <h1>Requerimentos</h1>
+                <button class="btn-primary" onclick="document.getElementById('modal-req').showModal()" style="width:auto;">+ Novo Pedido</button>
+            </div>
+
+            <div class="widget">
+                <table class="table">
+                    <thead><tr><th>ID</th><th>Tipo</th><th>Data</th><th>Estado</th></tr></thead>
+                    <tbody>
+                        <tr><td>#8021</td><td>Certidão de Matrícula</td><td>10/01/2026</td><td style="color:orange">Em Análise</td></tr>
+                        <tr><td>#7540</td><td>Estatuto Trab-Estudante</td><td>15/09/2025</td><td style="color:green">Deferido</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+
+        <dialog id="modal-req" style="border:none; border-radius:8px; padding:0; box-shadow:0 10px 25px rgba(0,0,0,0.2); width:min(500px, 90%);">
+            <div style="padding:20px; background:var(--bg-card); color:var(--text-main);">
+                <h2 style="margin-top:0">Novo Requerimento</h2>
+                <p>Selecione o tipo de documento que necessita.</p>
+                
+                <form method="dialog">
+                    <div style="margin-bottom:15px;">
+                        <label style="display:block; margin-bottom:5px;">Tipo de Pedido</label>
+                        <select class="form-control" style="width:100%; padding:8px;">
+                            <option>Certidão de Aproveitamento</option>
+                            <option>Declaração Passe Sub-23</option>
+                            <option>Revisão de Prova</option>
+                        </select>
+                    </div>
+                    <div style="margin-bottom:15px;">
+                        <label style="display:block; margin-bottom:5px;">Observações</label>
+                        <textarea class="form-control" rows="3" style="width:100%; padding:8px;"></textarea>
+                    </div>
+                    <div style="text-align:right; gap:10px; display:flex; justify-content:flex-end;">
+                        <button class="btn-logout" style="color:var(--text-main); border:1px solid #ccc; cursor:pointer;">Cancelar</button>
+                        <button class="btn-primary" style="width:auto; margin:0;">Submeter</button>
+                    </div>
+                </form>
+            </div>
+        </dialog>
+    </div>
+</body>
+</html>

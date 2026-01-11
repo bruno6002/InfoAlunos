@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrições - InfoAlunos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo-area"><div class="logo-icon">UMa</div><span>InfoAlunos</span></div>
+        <nav class="top-nav"><a href="index.html" style="color:white; text-decoration:none;">Voltar</a></nav>
+    </header>
+
+    <div class="layout-grid">
+        <aside class="sidebar">
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">Início</a></li>
+                    <li class="nav-group-title">Geral</li>
+                    <li><a href="perfil.html">Dados Pessoais</a></li>
+                    <li class="nav-group-title">Serviços</li>
+                    <li><a href="pagamentos.html">Pagamentos</a></li>
+                    <li><a href="inscricoes.html" class="active">Inscrições</a></li>
+                    <li><a href="requerimentos.html">Requerimentos</a></li>
+                    <li class="nav-group-title">Avaliação</li>
+                    <li><a href="pautas.html">Pautas e Notas</a></li>
+                    <li class="nav-group-title">Aulas</li>
+                    <li><a href="horario.html">Horário</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <h1>Inscrições em Exames</h1>
+            
+            <div class="widget" style="margin-bottom: 20px;">
+                <h2>📝 Inscrição Época de Recurso</h2>
+                <p>Seleciona as unidades curriculares a que te pretendes inscrever.</p>
+                
+                <form onsubmit="alert('Inscrição submetida com sucesso!'); return false;">
+                    <div style="margin: 15px 0;">
+                        <label style="display:block; margin-bottom:10px; cursor:pointer;">
+                            <input type="checkbox" name="uc" value="bd"> Bases de Dados (Melhoria)
+                        </label>
+                        <label style="display:block; margin-bottom:10px; cursor:pointer;">
+                            <input type="checkbox" name="uc" value="mat"> Matemática I (Recurso)
+                        </label>
+                    </div>
+                    <button type="submit" class="btn-primary">Inscrever</button>
+                </form>
+            </div>
+
+            <div class="widget">
+                <h2>Histórico de Inscrições</h2>
+                <table class="table">
+                    <thead><tr><th>Ano</th><th>Tipo</th><th>Data</th><th>Estado</th></tr></thead>
+                    <tbody>
+                        <tr><td>2025/2026</td><td>Matrícula Anual</td><td>01/09/2025</td><td style="color:green">Confirmado</td></tr>
+                        <tr><td>2024/2025</td><td>Exame Recurso</td><td>12/01/2025</td><td style="color:green">Confirmado</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
