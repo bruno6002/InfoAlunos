@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão Universitário - InfoAlunos</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CSS Específico para o Cartão (Inline para ser rápido) */
+        .cartao-virtual {
+            background: linear-gradient(135deg, #1a5490, #6a0dad);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            max-width: 400px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        .cartao-virtual::after {
+            content: "UMA";
+            position: absolute;
+            right: -20px;
+            bottom: -30px;
+            font-size: 100px;
+            opacity: 0.1;
+            font-weight: bold;
+        }
+        .cartao-chip {
+            width: 50px;
+            height: 35px;
+            background: linear-gradient(135deg, #ffd700, #ffec8b);
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo-area"><div class="logo-icon">UMa</div><span>InfoAlunos</span></div>
+        <nav class="top-nav"><a href="index.html" style="color:white; text-decoration:none;">Voltar</a></nav>
+    </header>
+
+    <div class="layout-grid">
+        <aside class="sidebar">
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">Início</a></li>
+                    <li class="nav-group-title">Geral</li>
+                    <li><a href="perfil.html">Dados Pessoais</a></li>
+                    <li class="nav-group-title">Serviços</li>
+                    <li><a href="pagamentos.html">Pagamentos</a></li>
+                    <li><a href="inscricoes.html">Inscrições</a></li>
+                    <li><a href="cartao.html" class="active">Cartão Universitário</a></li>
+                    <li class="nav-group-title">Avaliação</li>
+                    <li><a href="pautas.html">Pautas e Notas</a></li>
+                    <li><a href="inqueritos.html">Inquéritos</a></li>
+                    <li class="nav-group-title">Aulas</li>
+                    <li><a href="horario.html">Horário</a></li>
+                    <li><a href="sumarios.html">Sumários</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <h1>Cartão Universitário</h1>
+            
+            <div class="widget">
+                <div style="display: flex; flex-wrap: wrap; gap: 30px; align-items: start;">
+                    
+                    <div>
+                        <h3>Cartão Virtual</h3>
+                        <div class="cartao-virtual">
+                            <div style="display:flex; justify-content:space-between; align-items:center;">
+                                <div class="cartao-chip"></div>
+                                <span>UNIVERSIDADE DA MADEIRA</span>
+                            </div>
+                            <h2 style="margin: 10px 0; font-size:1.4rem;">20256002</h2>
+                            <p style="margin: 0; font-size: 1.1rem; font-weight: bold;">ALUNO EXEMPLO</p>
+                            <p style="margin: 5px 0 0 0; font-size: 0.8rem; opacity: 0.8;">CTSP Tecnologias e Programação</p>
+                        </div>
+                    </div>
+
+                    <div style="flex: 1; min-width: 250px;">
+                        <h3>Estado do Cartão</h3>
+                        <div class="card-aviso info">
+                            ✅ O teu cartão está <strong>Ativo</strong>.
+                        </div>
+                        <ul style="list-style: none; padding: 0; margin-top: 15px;">
+                            <li style="margin-bottom: 10px;"><strong>Data de Emissão:</strong> 15/09/2025</li>
+                            <li style="margin-bottom: 10px;"><strong>Validade:</strong> 09/2029</li>
+                            <li style="margin-bottom: 10px;"><strong>Perfil:</strong> Estudante</li>
+                        </ul>
+                        <button class="btn-primary" onclick="alert('Pedido de 2ª via iniciado!')">Pedir 2ª Via</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

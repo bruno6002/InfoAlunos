@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inquéritos - InfoAlunos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo-area"><div class="logo-icon">UMa</div><span>InfoAlunos</span></div>
+        <nav class="top-nav"><a href="index.html" style="color:white; text-decoration:none;">Voltar</a></nav>
+    </header>
+
+    <div class="layout-grid">
+        <aside class="sidebar">
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">Início</a></li>
+                    <li class="nav-group-title">Geral</li>
+                    <li><a href="perfil.html">Dados Pessoais</a></li>
+                    <li class="nav-group-title">Serviços</li>
+                    <li><a href="pagamentos.html">Pagamentos</a></li>
+                    <li><a href="inscricoes.html">Inscrições</a></li>
+                    <li><a href="cartao.html">Cartão Universitário</a></li>
+                    <li class="nav-group-title">Avaliação</li>
+                    <li><a href="pautas.html">Pautas e Notas</a></li>
+                    <li><a href="inqueritos.html" class="active">Inquéritos</a></li>
+                    <li class="nav-group-title">Aulas</li>
+                    <li><a href="horario.html">Horário</a></li>
+                    <li><a href="sumarios.html">Sumários</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <h1>Inquéritos Pedagógicos</h1>
+            
+            <div class="widget">
+                <h2>Pendentes</h2>
+                <div class="card-aviso warn">
+                    ⚠️ Tens 1 inquérito por preencher. A tua opinião é importante!
+                </div>
+                
+                <div style="border: 1px solid var(--border-color); border-radius: 8px; padding: 15px; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+                    <div>
+                        <strong>Design Hipermédia (1º Semestre)</strong>
+                        <p style="margin: 5px 0 0 0; font-size: 0.9rem;">Avaliação do funcionamento da unidade curricular.</p>
+                    </div>
+                    <button class="btn-primary" style="width: auto;">Responder</button>
+                </div>
+
+                <h2>Histórico</h2>
+                <table class="table">
+                    <thead><tr><th>Inquérito</th><th>Data</th><th>Estado</th></tr></thead>
+                    <tbody>
+                        <tr>
+                            <td>Inquérito RAIDES</td>
+                            <td>15/09/2025</td>
+                            <td style="color: green;"><strong>Submetido</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Programação Web (Docente)</td>
+                            <td>10/01/2026</td>
+                            <td style="color: green;"><strong>Submetido</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
