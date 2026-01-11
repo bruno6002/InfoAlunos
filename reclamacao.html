@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reclamação de Notas - InfoAlunos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo-area"><div class="logo-icon">UMa</div><span>InfoAlunos</span></div>
+        <nav class="top-nav"><a href="index.html" style="color:white; text-decoration:none;">Voltar</a></nav>
+    </header>
+    <div class="layout-grid">
+        <aside class="sidebar"><nav><ul class="nav-list"><li><a href="index.html">← Voltar ao Menu</a></li></ul></nav></aside>
+        <main class="main-content">
+            <h1>Reclamação de Notas</h1>
+            <div class="widget">
+                <p>Utiliza este formulário apenas para erros formais na pauta.</p>
+                <form onsubmit="alert('Reclamação submetida.'); return false;">
+                    <div class="form-group">
+                        <label>Unidade Curricular</label>
+                        <select class="form-control">
+                            <option>Design Hipermédia - Época Normal</option>
+                            <option>Bases de Dados - Época Normal</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Motivo</label>
+                        <textarea class="form-control" rows="4" placeholder="Descreve o erro na nota..."></textarea>
+                    </div>
+                    <button class="btn-primary">Submeter Reclamação</button>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

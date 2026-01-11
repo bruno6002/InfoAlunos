@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo Processo - InfoAlunos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo-area"><div class="logo-icon">UMa</div><span>InfoAlunos</span></div>
+        <nav class="top-nav"><a href="index.html" style="color:white; text-decoration:none;">Voltar</a></nav>
+    </header>
+    <div class="layout-grid">
+        <aside class="sidebar"><nav><ul class="nav-list"><li><a href="index.html">← Voltar ao Menu</a></li></ul></nav></aside>
+        <main class="main-content">
+            <h1>Pedido de Creditação</h1>
+            <div class="widget">
+                <p>Inicie aqui o pedido de equivalência de disciplinas realizadas noutro curso.</p>
+                <form>
+                    <div class="form-group">
+                        <label>Tipo de Creditação</label>
+                        <select class="form-control">
+                            <option>Formação Certificada</option>
+                            <option>Experiência Profissional</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Anexar Documentos (PDF)</label>
+                        <input type="file" class="form-control">
+                    </div>
+                    <button class="btn-primary" onclick="alert('Pedido iniciado! Agora deve selecionar as UCs.')">Seguinte >></button>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
