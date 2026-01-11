@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfoAlunos - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo-area">
+            <div class="logo-icon">UMa</div>
+            <span>InfoAlunos</span>
+        </div>
+        <nav class="top-nav">
+            <span class="user-name">Aluno (2025/26)</span>
+            <a href="login.html" class="btn-logout">Sair</a>
+        </nav>
+    </header>
+
+    <div class="layout-grid">
+        <aside class="sidebar">
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html" class="active">Início (Dashboard)</a></li>
+                    
+                    <li class="nav-group-title">Geral</li>
+                    <li><a href="#">Dados Pessoais</a></li>
+                    <li><a href="#">Processos</a></li>
+                    
+                    <li class="nav-group-title">Serviços</li>
+                    <li><a href="#">Pagamentos / Propinas</a></li>
+                    <li><a href="#">Inscrições</a></li>
+                    <li><a href="#">Requerimentos</a></li>
+
+                    <li class="nav-group-title">Avaliação</li>
+                    <li><a href="#">Pautas e Notas</a></li>
+                    <li><a href="#">Inquéritos</a></li>
+
+                    <li class="nav-group-title">Aulas</li>
+                    <li><a href="#">Horário</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <h1>Painel do Aluno</h1>
+
+            <div class="dashboard-widgets">
+                
+                <section class="widget">
+                    <h2>📢 Avisos Recentes</h2>
+                    <div class="card-aviso warn">
+                        <h3>Pagamento de Propinas</h3>
+                        <p>A 2ª prestação vence dia 15 de Janeiro.</p>
+                    </div>
+                    <div class="card-aviso info">
+                        <h3>Época de Recurso</h3>
+                        <p>Inscrições abertas para melhoria de nota.</p>
+                    </div>
+                </section>
+
+                <section class="widget">
+                    <h2>📊 Últimas Notas</h2>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Unidade Curricular</th>
+                                <th>Data</th>
+                                <th>Nota</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Design Hipermédia</td>
+                                <td>11/01/2026</td>
+                                <td><strong>18</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Programação Web</td>
+                                <td>10/01/2026</td>
+                                <td>16</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button class="btn-primary" popovertarget="pauta-info" style="margin-top: 10px;">Ver Detalhes</button>
+                    <div id="pauta-info" popover>
+                        <h3>Detalhes da Pauta</h3>
+                        <p>A consulta de provas é na sala 20, dia 14 às 10h.</p>
+                    </div>
+                </section>
+
+                <section class="widget">
+                    <h2>💰 Estado das Propinas</h2>
+                    <div style="margin-top: 10px;">
+                        <label>Ano Letivo 2025/2026</label>
+                        <progress value="70" max="100"></progress>
+                        <p><small>70% regularizado</small></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
