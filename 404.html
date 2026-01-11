@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Não Encontrada - InfoAlunos</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .error-container {
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            text-align: center;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+        }
+        .error-code {
+            font-size: 8rem;
+            font-weight: bold;
+            color: var(--primary);
+            margin: 0;
+            line-height: 1;
+        }
+        .error-msg {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div>
+            <h1 class="error-code">404</h1>
+            <p class="error-msg">Ups! A página que procuras não existe.</p>
+            <a href="index.html" class="btn-primary" style="text-decoration: none;">Voltar ao Início</a>
+        </div>
+    </div>
+</body>
+</html>
