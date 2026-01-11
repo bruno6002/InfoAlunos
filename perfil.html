@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados Pessoais - InfoAlunos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo-area"><div class="logo-icon">UMa</div><span>InfoAlunos</span></div>
+        <nav class="top-nav"><a href="index.html" style="color:white; text-decoration:none;">Voltar ao Início</a></nav>
+    </header>
+
+    <div class="layout-grid">
+        <aside class="sidebar">
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">Início</a></li>
+                    <li class="nav-group-title">Geral</li>
+                    <li><a href="perfil.html" class="active">Dados Pessoais</a></li>
+                    <li class="nav-group-title">Serviços</li>
+                    <li><a href="pagamentos.html">Pagamentos</a></li>
+                    <li class="nav-group-title">Avaliação</li>
+                    <li><a href="pautas.html">Pautas e Notas</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <h1>Dados Pessoais</h1>
+            <div class="widget">
+                <form>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>Nome Completo</label>
+                            <input type="text" class="form-control" value="Aluno Exemplo da Silva" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label>Número de Aluno</label>
+                            <input type="text" class="form-control" value="20256002" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label>Curso</label>
+                            <input type="text" class="form-control" value="CTSP Tecnologias e Programação" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label>Email Institucional</label>
+                            <input type="email" class="form-control" value="20256002@student.uma.pt" readonly>
+                        </div>
+                    </div>
+                    <hr style="margin: 20px 0; border: 0; border-top: 1px solid var(--border-color);">
+                    <h3>Morada de Residência</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>Rua</label>
+                            <input type="text" class="form-control" value="Caminho da Penteada">
+                        </div>
+                        <div class="form-group">
+                            <label>Código Postal</label>
+                            <input type="text" class="form-control" value="9020-105">
+                        </div>
+                        <div class="form-group">
+                            <label>Localidade</label>
+                            <input type="text" class="form-control" value="Funchal">
+                        </div>
+                    </div>
+                    <button type="button" class="btn-primary" style="width: auto; margin-top: 1rem;">Guardar Alterações</button>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

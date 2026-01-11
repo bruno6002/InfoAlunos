@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamentos - InfoAlunos</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Script simples para as Tabs funcionarem (Requisito UX)
+        function openTab(tabName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("tab-content");
+            for (i = 0; i < x.length; i++) { x[i].style.display = "none"; }
+            tablinks = document.getElementsByClassName("tab-btn");
+            for (i = 0; i < tablinks.length; i++) { tablinks[i].classList.remove("active"); }
+            document.getElementById(tabName).style.display = "block";
+            event.currentTarget.classList.add("active");
+        }
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo-area"><div class="logo-icon">UMa</div><span>InfoAlunos</span></div>
+        <nav class="top-nav"><a href="index.html" style="color:white; text-decoration:none;">Voltar</a></nav>
+    </header>
+
+    <div class="layout-grid">
+        <aside class="sidebar">
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">Início</a></li>
+                    <li class="nav-group-title">Geral</li>
+                    <li><a href="perfil.html">Dados Pessoais</a></li>
+                    <li class="nav-group-title">Serviços</li>
+                    <li><a href="pagamentos.html" class="active">Pagamentos</a></li>
+                    <li class="nav-group-title">Avaliação</li>
+                    <li><a href="pautas.html">Pautas e Notas</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <h1>Conta Corrente</h1>
+            
+            <div class="widget">
+                <div class="tabs-container">
+                    <button class="tab-btn active" onclick="openTab('propinas')">Propinas</button>
+                    <button class="tab-btn" onclick="openTab('emolumentos')">Emolumentos</button>
+                    <button class="tab-btn" onclick="openTab('historico')">Histórico</button>
+                </div>
+
+                <div id="propinas" class="tab-content active">
+                    <div class="card-aviso warn">
+                        ⚠️ Tens uma prestação a vencer em breve.
+                    </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Descrição</th>
+                                <th>Data Limite</th>
+                                <th>Valor</th>
+                                <th>Estado</th>
+                                <th>Ação</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1ª Prestação 25/26</td>
+                                <td>20/10/2025</td>
+                                <td>€ 69.70</td>
+                                <td style="color:green; font-weight:bold;">Pago</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>2ª Prestação 25/26</td>
+                                <td>15/01/2026</td>
+                                <td>€ 69.70</td>
+                                <td style="color:orange; font-weight:bold;">A Pagamento</td>
+                                <td><button class="btn-primary" style="padding: 5px 10px; width:auto; margin:0;">Referência MB</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="emolumentos" class="tab-content">
+                    <p>Não existem emolumentos a pagamento.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

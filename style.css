@@ -116,3 +116,41 @@ progress { width: 100%; height: 20px; accent-color: var(--primary); margin-top: 
     .layout-grid { grid-template-columns: 1fr; }
     .sidebar { display: none; }
 }
+
+/* --- ADIÇÕES PARA PÁGINAS INTERNAS --- */
+
+/* 1. Formulários (Do teu Ex 9 e 11) */
+.form-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+.form-group { margin-bottom: 1rem; }
+.form-group label { display: block; margin-bottom: 0.5rem; font-weight: 600; font-size: 0.9rem; }
+.form-control {
+    width: 100%; padding: 10px; border: 1px solid var(--border-color); border-radius: 6px;
+    background: var(--bg-body); color: var(--text-main);
+}
+.form-control:read-only { background-color: light-dark(#e9ecef, #2d2d2d); opacity: 0.7; }
+
+/* 2. Tabs / Abas (Do teu Ex 15) */
+.tabs-container { display: flex; gap: 10px; margin-bottom: 20px; border-bottom: 2px solid var(--border-color); }
+.tab-btn {
+    padding: 10px 20px; border: none; background: none; color: var(--text-main);
+    cursor: pointer; font-weight: 600; opacity: 0.6; border-bottom: 3px solid transparent;
+}
+.tab-btn:hover { opacity: 1; }
+.tab-btn.active { opacity: 1; border-bottom-color: var(--primary); color: var(--primary); }
+.tab-content { display: none; animation: fadeIn 0.3s; }
+.tab-content.active { display: block; }
+
+/* 3. Accordion (Do teu Ex 2) */
+details.accordion-item {
+    background: var(--bg-card); border: 1px solid var(--border-color);
+    margin-bottom: 10px; border-radius: 6px; overflow: hidden;
+}
+details.accordion-item summary {
+    padding: 15px; cursor: pointer; font-weight: bold; list-style: none;
+    display: flex; justify-content: space-between; align-items: center;
+}
+details.accordion-item summary::after { content: '+'; font-size: 1.2rem; }
+details.accordion-item[open] summary::after { content: '-'; }
+details.accordion-item .content { padding: 15px; border-top: 1px solid var(--border-color); }
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
