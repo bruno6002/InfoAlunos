@@ -44,24 +44,36 @@
 
     <div class="layout-grid">
         <aside class="sidebar">
-            <nav>
-                <ul class="nav-list">
-                    <li><a href="index.html">Início</a></li>
-                    <li class="nav-group-title">Geral</li>
-                    <li><a href="perfil.html">Dados Pessoais</a></li>
-                    <li class="nav-group-title">Serviços</li>
-                    <li><a href="pagamentos.html">Pagamentos</a></li>
-                    <li><a href="inscricoes.html">Inscrições</a></li>
-                    <li><a href="cartao.html" class="active">Cartão Universitário</a></li>
-                    <li class="nav-group-title">Avaliação</li>
-                    <li><a href="pautas.html">Pautas e Notas</a></li>
-                    <li><a href="inqueritos.html">Inquéritos</a></li>
-                    <li class="nav-group-title">Aulas</li>
-                    <li><a href="horario.html">Horário</a></li>
-                    <li><a href="sumarios.html">Sumários</a></li>
-                </ul>
-            </nav>
-        </aside>
+    <nav>
+        <ul class="nav-list">
+            <li><a href="index.html">Início (Dashboard)</a></li>
+            
+            <li class="nav-group-title">Geral</li>
+            <li><a href="perfil.html">Dados Pessoais</a></li>
+            <li><a href="processos.html">Processos</a></li>
+            <li><a href="ajuda.html">Ajuda / Privacidade</a></li>
+            
+            <li class="nav-group-title">Serviços</li>
+            <li><a href="pagamentos.html">Pagamentos</a></li>
+            <li><a href="inscricoes.html">Inscrições</a></li>
+            <li><a href="requerimentos.html">Requerimentos</a></li>
+            <li><a href="cartao.html">Cartão Universitário</a></li>
+            <li><a href="sasuma.html">SASUMa - Bolsas</a></li>
+
+            <li class="nav-group-title">Avaliação</li>
+            <li><a href="pautas.html">Pautas e Notas</a></li>
+            <li><a href="inqueritos.html">Inquéritos</a></li>
+
+            <li class="nav-group-title">Aulas</li>
+            <li><a href="horario.html">Horário</a></li>
+            <li><a href="sumarios.html">Sumários</a></li>
+            
+            <li style="margin-top: 20px; border-top: 1px solid var(--border-color);">
+                <a href="caderno.html" style="color: var(--primary); font-size: 0.9rem;">🎨 Caderno de Estilos</a>
+            </li>
+        </ul>
+    </nav>
+</aside>
 
         <main class="main-content">
             <h1>Cartão Universitário</h1>
@@ -92,7 +104,7 @@
                             <li style="margin-bottom: 10px;"><strong>Validade:</strong> 09/2029</li>
                             <li style="margin-bottom: 10px;"><strong>Perfil:</strong> Estudante</li>
                         </ul>
-                        <button class="btn-primary" onclick="alert('Pedido de 2ª via iniciado!')">Pedir 2ª Via</button>
+                       <button class="btn-primary" onclick="confirm('Tens a certeza que queres pedir uma 2ª via? (Custo: €5.00)') ? alert('Pedido efetuado!') : alert('Cancelado.');">Pedir 2ª Via</button>
                     </div>
                 </div>
             </div>

@@ -26,18 +26,32 @@
 
     <div class="layout-grid">
         <aside class="sidebar">
-            <nav>
-                <ul class="nav-list">
-                    <li><a href="index.html">Início</a></li>
-                    <li class="nav-group-title">Geral</li>
-                    <li><a href="perfil.html">Dados Pessoais</a></li>
-                    <li class="nav-group-title">Serviços</li>
-                    <li><a href="pagamentos.html" class="active">Pagamentos</a></li>
-                    <li class="nav-group-title">Avaliação</li>
-                    <li><a href="pautas.html">Pautas e Notas</a></li>
-                </ul>
-            </nav>
-        </aside>
+    <nav>
+        <ul class="nav-list">
+            <li><a href="index.html" class="active">Início (Dashboard)</a></li>
+            
+            <li class="nav-group-title">Geral</li>
+            <li><a href="perfil.html">Dados Pessoais</a></li>
+            <li><a href="processos.html">Processos</a></li>
+            <li><a href="ajuda.html">Ajuda / Privacidade</a></li>
+            
+            <li class="nav-group-title">Serviços</li>
+            <li><a href="pagamentos.html">Pagamentos</a></li>
+            <li><a href="inscricoes.html">Inscrições</a></li>
+            <li><a href="requerimentos.html">Requerimentos</a></li>
+            <li><a href="cartao.html">Cartão Universitário</a></li>
+            <li><a href="sasuma.html">SASUMa - Bolsas</a></li>
+
+            <li class="nav-group-title">Avaliação</li>
+            <li><a href="pautas.html">Pautas e Notas</a></li>
+            <li><a href="inqueritos.html">Inquéritos</a></li>
+
+            <li class="nav-group-title">Aulas</li>
+            <li><a href="horario.html">Horário</a></li>
+            <li><a href="sumarios.html">Sumários</a></li>
+        </ul>
+    </nav>
+</aside>
 
         <main class="main-content">
             <h1>Conta Corrente</h1>
@@ -76,7 +90,7 @@
                                 <td>15/01/2026</td>
                                 <td>€ 69.70</td>
                                 <td style="color:orange; font-weight:bold;">A Pagamento</td>
-                                <td><button class="btn-primary" style="padding: 5px 10px; width:auto; margin:0;">Referência MB</button></td>
+                                <td><button class="btn-primary" onclick="alert('🏧 Referência Multibanco:\n\nEntidade: 12345\nReferência: 123 456 789\nValor: €69.70');">Referência MB</button>
                             </tr>
                         </tbody>
                     </table>
