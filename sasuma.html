@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SASUMa - InfoAlunos</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function openTab(tabName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("tab-content");
+            for (i = 0; i < x.length; i++) { x[i].style.display = "none"; }
+            tablinks = document.getElementsByClassName("tab-btn");
+            for (i = 0; i < tablinks.length; i++) { tablinks[i].classList.remove("active"); }
+            document.getElementById(tabName).style.display = "block";
+            event.currentTarget.classList.add("active");
+        }
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo-area"><div class="logo-icon">UMa</div><span>InfoAlunos</span></div>
+        <nav class="top-nav"><a href="index.html" style="color:white; text-decoration:none;">Voltar</a></nav>
+    </header>
+
+    <div class="layout-grid">
+        <aside class="sidebar">
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">Início</a></li>
+                    <li class="nav-group-title">Geral</li>
+                    <li><a href="perfil.html">Dados Pessoais</a></li>
+                    <li><a href="processos.html">Processos</a></li>
+                    <li><a href="ajuda.html">Ajuda / Privacidade</a></li>
+                    <li class="nav-group-title">Serviços</li>
+                    <li><a href="pagamentos.html">Pagamentos</a></li>
+                    <li><a href="inscricoes.html">Inscrições</a></li>
+                    <li><a href="sasuma.html" class="active">SASUMa - Bolsas</a></li>
+                    <li class="nav-group-title">Avaliação</li>
+                    <li><a href="pautas.html">Pautas e Notas</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <h1>Serviços de Ação Social (SASUMa)</h1>
+
+            <div class="widget">
+                <div class="tabs-container">
+                    <button class="tab-btn active" onclick="openTab('bolsas')">Bolsas</button>
+                    <button class="tab-btn" onclick="openTab('alimentacao')">Alimentação</button>
+                    <button class="tab-btn" onclick="openTab('alojamento')">Alojamento</button>
+                </div>
+
+                <div id="bolsas" class="tab-content active">
+                    <div class="card-aviso info">
+                        ℹ️ A tua candidatura à bolsa DGES encontra-se <strong>em análise</strong>.
+                    </div>
+                    <h3>Estado da Candidatura</h3>
+                    <progress value="60" max="100"></progress>
+                    <p><small>Passo 3 de 5: Verificação Tributária</small></p>
+                    <hr style="margin: 20px 0; border: 0; border-top: 1px solid var(--border-color);">
+                    <button class="btn-primary" style="width: auto;">Entregar Documentos em Falta</button>
+                </div>
+
+                <div id="alimentacao" class="tab-content">
+                    <h3>Ementa do Dia - Cantina</h3>
+                    <div style="display: grid; gap: 10px; margin-top: 10px;">
+                        <div style="background: var(--bg-body); padding: 10px; border-radius: 4px;">
+                            <strong>Prato de Carne:</strong> Frango Assado com Arroz
+                        </div>
+                        <div style="background: var(--bg-body); padding: 10px; border-radius: 4px;">
+                            <strong>Prato de Peixe:</strong> Filete de Pescada
+                        </div>
+                        <div style="background: var(--bg-body); padding: 10px; border-radius: 4px;">
+                            <strong>Vegetariano:</strong> Lasanha de Legumes
+                        </div>
+                    </div>
+                </div>
+
+                <div id="alojamento" class="tab-content">
+                    <p>Não tens nenhuma candidatura a alojamento na Residência Universitária.</p>
+                    <button class="btn-primary" style="width: auto;">Candidatar a Alojamento</button>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

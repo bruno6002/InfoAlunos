@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processos - InfoAlunos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo-area"><div class="logo-icon">UMa</div><span>InfoAlunos</span></div>
+        <nav class="top-nav"><a href="index.html" style="color:white; text-decoration:none;">Voltar</a></nav>
+    </header>
+
+    <div class="layout-grid">
+        <aside class="sidebar">
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">Início</a></li>
+                    <li class="nav-group-title">Geral</li>
+                    <li><a href="perfil.html">Dados Pessoais</a></li>
+                    <li><a href="processos.html" class="active">Processos</a></li> <li><a href="ajuda.html">Ajuda / Privacidade</a></li>
+                    <li class="nav-group-title">Serviços</li>
+                    <li><a href="pagamentos.html">Pagamentos</a></li>
+                    <li><a href="inscricoes.html">Inscrições</a></li>
+                    <li><a href="requerimentos.html">Requerimentos</a></li>
+                    <li><a href="sasuma.html">SASUMa - Bolsas</a></li>
+                    <li class="nav-group-title">Avaliação</li>
+                    <li><a href="pautas.html">Pautas e Notas</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <h1>Os Meus Processos</h1>
+            
+            <div class="widget">
+                <div style="margin-bottom: 20px;">
+                    <button class="btn-primary" style="width: auto;">+ Novo Processo de Creditação</button>
+                </div>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Nº Processo</th>
+                            <th>Tipo</th>
+                            <th>Data Submissão</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2025/001</td>
+                            <td>Creditação (Bolonha)</td>
+                            <td>10/09/2025</td>
+                            <td style="color: var(--primary); font-weight: bold;">Concluído</td>
+                        </tr>
+                        <tr>
+                            <td>2025/004</td>
+                            <td>Estatuto Trabalhador-Estudante</td>
+                            <td>12/10/2025</td>
+                            <td style="color: green;">Deferido</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="margin-top: 15px; font-size: 0.9rem; color: gray;">Mostrando 2 de 2 processos.</p>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
